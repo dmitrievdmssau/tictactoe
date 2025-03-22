@@ -1,0 +1,10 @@
+<h4>{{'ИГРА № ' + gameId}}</h4>
+<table>
+  @for (m of [].constructor(rows); track m; let i = $index) {
+    <tr>
+      @for (n of [].constructor(rows); track n; let j = $index) {
+        <td style="font-size: 26px; user-select: none; text-align: center; width: 50px; height: 50px; border: 1px solid white;" (click)="cellClick(i, j, $event)">{{field && field[i] && field[i][j] ? field[i][j] : ''}}</td>
+      }
+    </tr>
+  }
+</table>

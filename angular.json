@@ -19,6 +19,7 @@
             "polyfills": [
               "zone.js"
             ],
+            "allowedCommonJsDependencies": ["jsonwebtoken"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -27,7 +28,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/primeflex/primeflex.scss"
             ],
             "scripts": []
           },
@@ -85,7 +87,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/primeflex/primeflex.scss"
             ],
             "scripts": []
           }

@@ -1,0 +1,7 @@
+<div class="flex flex-column pi-align-start justify-content-start gap-3">
+  <app-main-page-menu/>
+  <app-title-breadcrumb/>
+  <div class="flex align-items-center justify-content-center">
+    <app-game-field (handleCellClick)="handleCellClick($event)" [rows]="3" [gameId]="id" [cols]="3"></app-game-field>
+  </div>
+</div>
